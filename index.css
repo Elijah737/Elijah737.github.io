@@ -1,0 +1,19 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navBox {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink {
+    font-size: 35px;
+}
+
+.navLink:hover {
+    font-size: 37px;
+}
+
