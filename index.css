@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*! -----------------------------V--V-- Nav Styles --V--V----------------------------------------------- */
 
 .navContainer {
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-color: rgb(61, 61, 61);
     height: 40px;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
@@ -52,6 +55,8 @@
     transform-origin: left;
 }
 
+/* ! -----------------------------------V--V-- Home Styles --V--V------------------------------------------- */
+
 .homeContent {
     height: 100vh;
     background-color: rgb(184, 184, 184);
@@ -60,6 +65,32 @@
 .topHome {
     display: flex;
     justify-content: center;
+}
+
+.thing1 {
+    /* background-color: tomato; */
+    background-image: url(https://www.msta.org/wp-content/uploads/2017/10/watercolor-background-1.jpg);
+    background-size: cover;
+}
+
+.thing2 {
+    /* background-color: lightskyblue; */
+    background-image: url(./quizzapp.png);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thing3 {
+    /* background-color: lightgreen; */
+    background-image: url(./spaceTree\ \(1\).png);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thing4 {
+    background-color: lightsalmon;
 }
 
 .itemContainer {
@@ -75,14 +106,62 @@
 }
 
 .item {
-    background-color: rgb(173, 173, 173);
+    /* background-color: rgb(173, 173, 173); */
     margin: 10px;
     width: 200px;
     height: 300px;
     border-radius: 10px;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .item:hover {
-    box-shadow: 1px 1px 1px black;;
+    box-shadow: 1px 1px 1px black;
+}
+
+.itemTop {
+    /* visibility: hidden; */
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    background-color: rgb(122, 122, 122);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid black;
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms ease-in;
+    text-align: center;
+}
+
+.item:hover > .itemTop {
+    visibility: visible;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.itemBody {
+    width: 80%;
+    height: 70%;
+    margin-top: 10%;
+    border-radius: 5%;
+    color: white;
+    background-color: rgb(194, 194, 194);
+
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: transform 200ms ease-in;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.item:hover > .itemBody {
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: bottom;
 }
