@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="portfolio.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="circle">
+        <div class="initial">
+            <div><a class="eb" href="https://www.linkedin.com/in/elijahbrown737/">EB</a></div>
+    </div>
+    </div>
+
     <nav class="navContainer">
         <div class="navBox">
             <a class="navLink" href="index.html">Home</a>
@@ -17,5 +24,22 @@
     </nav>   
 
     <h1>Portfolio</h1>
+
+    <div class="portfolioContent" >
+        <div class="portfolioModals" >
+            <diV onclick="modal_img()" id="port1" class="portPic"></diV>
+            <diV onclick="modal_img()" class="portPic port2"></diV>
+            <diV onclick="modal_img()" class="portPic port3"></diV>
+            <diV onclick="modal_img()" class="portPic port4"></diV>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./spaceTree (1).png"></img>
+        <div id="caption"></div>
+    </div>
+
 </body>
+<script type="text/javascript" src="portfolio.js"></script>
 </html>

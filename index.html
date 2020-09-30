@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="index.css">
     <title>Page Example</title>
 </head>
 <body>
+    <div class="circle">
+    <div class="initial">
+        <div><a class="eb" href="https://www.linkedin.com/in/elijahbrown737/">EB</a></div>
+    </div>
+    </div>
+
     <nav class="navContainer">
-        <div class="navBox">
+        <div id="navCont" class="navBox">
             <a class="navLink" href="index.html">Home</a>
             <a class="navLink" href="about.html">About</a>
             <a class="navLink" href="contact.html">Contact</a>
@@ -27,16 +34,17 @@
                 </div>
 
                 <div class="thing2 item">
-                    <div class="itemTop"> <h2>thing 2</h2> </div>
-                    <div class="itemBody">
-                        <h3>info thing 2</h3>
+                    <div class="itemTop"> <h2>Quizz App</h2> </div>
+                    <div onclick="goToQuizzApp()" class="itemBody">
+                        <h3>The most amazing card matching game that the world has ever seen. 
+                            Two player games with chat or a single player game in the category of your choice.</h3>
                     </div>
                 </div>
 
                 <div class="thing3 item">
-                    <div class="itemTop"> <h2>thing 3</h2> </div>
-                    <div class="itemBody">
-                        <h3>info thing 3</h3>
+                    <div class="itemTop"> <h2>Digital Art</h2> </div>
+                    <div onclick="goToPortfolio()" class="itemBody">
+                        <h3>Portfolio of my digital paintings (series of images that display modals on click)</h3>
                     </div>
                 </div>
 
@@ -52,4 +60,5 @@
     </div>
 
 </body>
+<script type="text/javascript" src="index.js"></script>
 </html>
