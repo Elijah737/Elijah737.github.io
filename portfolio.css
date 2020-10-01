@@ -26,13 +26,23 @@ body {
     background-size: 250px 350px;
 }
 
+#port2 {
+  background-image: url(./4-23-tree.png);
+  background-size: 250px 350px;
+}
+
+#port3 {
+  background-image: url(./penta.png);
+  background-size: 250px 350px;
+}
+
 
 
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 25px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -41,18 +51,18 @@ body {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
     /* background-image: url(./spaceTree\ \(1\).png); */
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
   }
   
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    height: 200%;
-    max-width: 700px;
+    max-width: 70%;
+    max-height: 100%;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* max-width: 1000px; */
   }
 
   /* #img01 {
@@ -90,7 +100,27 @@ body {
   }
   
   /* The Close Button */
-  .close {
+  .close1 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close3 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -100,10 +130,23 @@ body {
     transition: 0.3s;
   }
   
-  .close:hover,
-  .close:focus {
+  .close1:hover,
+  .close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close2:hover,
+  .close2:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
   }
   
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
