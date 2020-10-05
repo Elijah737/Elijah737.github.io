@@ -1,0 +1,119 @@
+body {
+	background: black;
+}
+
+/* .redPulse {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+    top: 360px;
+    right: 695px;
+    animation: pulse 1s infinite;
+} */
+/* 
+@keyframes pulse {
+    from {transform: scale(1);
+            opacity: 1;}
+    to {transform: scale(12.5);
+            opacity: 0;}
+} */
+
+.draw {
+	top:0;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.BG {
+	top:0;
+	height: 100vh;
+	width: 525px;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	animation: back 20s linear infinite;
+	position: absolute;
+}
+
+.gradient {
+	top:0;
+	height: 100vh;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	/*animation: skew 35s ease infinite;*/
+}
+
+.bgTrees {
+	top:0;
+	height: 100vh;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	animation: mid 25s ease infinite;
+}
+
+.farBGtrees {
+	top:0;
+	height: 100vh;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	animation: skew 35s ease infinite;
+}
+
+.mainTree {
+	top:0;
+	height: 100vh;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	animation: skew 20s ease infinite;
+}
+
+.fog {
+	top:0;
+	height: 100vh;
+	/*height: 800px;*/
+	/*width: 640px;*/
+	/*animation: skew 5s ease infinite;*/
+	animation: shrink 25s ease infinite, skew 20s ease infinite;
+}
+
+img	{
+	position: absolute;
+}
+
+@keyframes skew {
+  0%   {transform-origin: bottom; transform:skewX(0deg);}
+  /*10%  {transform-origin: bottom; transform:skewX(-0.5deg);}*/
+  25%  {transform-origin: bottom; transform:skewX(2deg);}
+  /*50%  {transform-origin: bottom; transform:skewX(1.5deg);}*/
+  80%  {transform-origin: bottom; transform:skewX(-2deg);}
+  100% {transform-origin: bottom; transform:skewX(0deg);}
+}
+
+@keyframes mid {
+    0%   {transform-origin: bottom; transform:skewX(0deg);}
+    /*10%  {transform-origin: bottom; transform:skewX(-0.5deg);}*/
+    25%  {transform-origin: bottom; transform:skewX(-2deg);}
+    /*50%  {transform-origin: bottom; transform:skewX(1.5deg);}*/
+    80%  {transform-origin: bottom; transform:skewX(2deg);}
+    100% {transform-origin: bottom; transform:skewX(0deg);}
+  }
+
+@keyframes shrink {
+  0%   {transform-origin: bottom; transform:scaleY(1);}
+  /*10%  {transform-origin: bottom; transform:scaleY(.95);}*/
+ /* 25%  {transform-origin: bottom; transform:scaleY(.97);}*/
+  50%  {transform-origin: bottom; transform:scaleY(1.25);}
+  /*75%  {transform-origin: bottom; transform:scaleY(1);}*/
+  100% {transform-origin: bottom; transform:scaleY(1);}
+}
+
+@keyframes back {
+  0%   {background-color: goldenrod;}
+  /*10%  {background-color: white;}*/
+  25%  {background-color: white;}
+  50%  {background-color: goldenrod;}
+  75%  {background-color: white;}
+  100% {background-color: goldenrod;}
+}

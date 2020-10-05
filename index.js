@@ -19,6 +19,10 @@ function goToPortfolio(){
     window.location = 'portfolio.html'
 };
 
+function goToSpaceTree(){
+    window.location = './4-23_tree_website_edit/index.html'
+};
+
 // var element = document.getElementById("navCont");
 //     element.classList.toggle("itemBody");
 

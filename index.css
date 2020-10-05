@@ -34,7 +34,10 @@
 }
 
 .thing4 {
-    background-color: lightsalmon;
+    background-image: url(./4-23-tree.png);
+    background-size: 250px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .itemContainer {
