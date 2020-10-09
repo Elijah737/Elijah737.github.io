@@ -8,10 +8,13 @@
     position: absolute;
     /* margin-top: 92px;
     margin-left: 95px; */
-    text-shadow: 2px 2px 0px white;
-    color: transparent;
-    font-size: 30px;
-    text-decoration: none;
+    /* text-shadow: 2px 2px 0px rgb(117, 117, 117); */
+    /* color: rgb(34, 34, 34); */
+    left: 5px;
+    top: 5px;
+    /* font-size: 30px; */
+    /* text-decoration: none; */ */
+    /* margin-top: 5px; */
 }
 
 /* .initial {
@@ -52,10 +55,10 @@
 .navContainer {
     display: flex;
     justify-content: center;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(34, 34, 34);
     height: 40px;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(148, 148, 148);
 }
 
 .green {

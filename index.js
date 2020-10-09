@@ -41,3 +41,22 @@ function goToSpaceTree(){
 // function myFunction() {
 //   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 // }
+
+
+
+
+
+// <div onclick="sizePlus()" >
+// <p id="p1">Hello World!</p>
+// </div>
+// <p id="p2">Hello World!</p>
+
+
+// let X = 56;
+// document.getElementById("p2").style.color = "blue";
+// document.getElementById("p2").style.fontFamily = "Arial";
+//document.getElementById("p2").style.fontSize = `${X}px`;
+
+// function sizePlus(){
+//     document.getElementById("p2").style.fontSize = `${X += 10}px`;
+//     }

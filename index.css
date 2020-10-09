@@ -2,7 +2,7 @@
 
 .homeContent {
     height: 100vh;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(65, 65, 65);
 }
 
 .topHome {
@@ -40,26 +40,76 @@
     background-position: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* justify-content: space-evenly; */
+}
+
 .itemContainer {
     display: flex;
-    width: 100%;
-    height: 80vh;
-    margin: 0 50px;
-    padding: 0 30px;
+    width: 90%;
+    /* height: 80vh; */
+    margin: 0 25px;
+    padding: 15px 20px;
     justify-content: space-around;
-    background-color: rgb(172, 172, 172);
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 3px;
+    box-shadow: 3px 5px 10px rgb(31, 31, 31);
+    /* border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px; */
+}
+
+.playing {
+    position: absolute;
+    background-image: url(./playing2-crop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 45px;
+    left: 7px;
+    height: 125px;
+    width: 125px;
+    z-index: 1;
+}
+
+.headerBox::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 60px;
+    left: 20px;
+    background-color: black;
+    box-shadow: 0px 0px 5px white;
+    animation: pulse 1s alternate linear infinite;
+}
+
+@keyframes pulse {
+    from{box-shadow: 0px 0px 5px white;}
+    to{box-shadow: 0px 0px 15px white;}
+}
+
+.headerBox {
+    width: 80%;
+    height: 100px;
+    margin: 20px;
+    border-radius: 7px;
+    color: rgb(202, 202, 202);
+    background-color: rgb(36, 36, 36);
+    padding: 10px 20px;
 }
 
 .item {
     /* background-color: rgb(173, 173, 173); */
-    /* margin: 10px; */
+    margin: 10px;
     width: 250px;
     height: 350px;
-    /* border-radius: 10px; */
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 7px;
+    /* border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
     transition: .5s;
     display: flex;
     flex-direction: column;
@@ -79,8 +129,8 @@
     height: 40px;
     padding-top: 7px;
     background-color: rgb(122, 122, 122);
-    /* border-top-right-radius: 10px;
-    border-top-left-radius: 10px; */
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     border-bottom: 1px solid black;
 
     transform: scaleY(0);
@@ -101,7 +151,7 @@
     margin-top: 10%;
     border-radius: 5%;
     color: white;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(97, 97, 97);
 
     transform: scale(0);
     transform-origin: bottom;
