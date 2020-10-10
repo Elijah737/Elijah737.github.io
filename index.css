@@ -2,7 +2,8 @@
 
 .homeContent {
     height: 100vh;
-    background-color: rgb(65, 65, 65);
+    /* background-color: rgb(65, 65, 65); */
+    background: linear-gradient(black, black, black, rgb(65, 65, 65))
 }
 
 .topHome {
@@ -55,7 +56,8 @@
     margin: 0 25px;
     padding: 15px 20px;
     justify-content: space-around;
-    background-color: rgb(175, 175, 175);
+    /* background-color: rgb(175, 175, 175); */
+    background-color: rgb(68, 68, 68);
     border-radius: 3px;
     box-shadow: 3px 5px 10px rgb(31, 31, 31);
     /* border-bottom-right-radius: 7px;
@@ -83,12 +85,12 @@
     top: 60px;
     left: 20px;
     background-color: black;
-    box-shadow: 0px 0px 5px white;
-    animation: pulse 1s alternate linear infinite;
+    /* box-shadow: 0px 0px 5px white; */
+    animation: pulse 5s alternate infinite;
 }
 
 @keyframes pulse {
-    from{box-shadow: 0px 0px 5px white;}
+    from{box-shadow: 0px 0px 0px white;}
     to{box-shadow: 0px 0px 15px white;}
 }
 
@@ -151,7 +153,7 @@
     margin-top: 10%;
     border-radius: 5%;
     color: white;
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(129, 129, 129);
 
     transform: scale(0);
     transform-origin: bottom;

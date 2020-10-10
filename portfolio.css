@@ -36,6 +36,10 @@ body {
   background-size: 250px 350px;
 }
 
+#port4 {
+  background-image: url(./foreMidBack.png);
+  background-size: 250px 350px;
+}
 
 
 .modal {
@@ -129,6 +133,16 @@ body {
     font-weight: bold;
     transition: 0.3s;
   }
+
+  .close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
   
   .close1:hover,
   .close1:focus {
@@ -146,6 +160,13 @@ body {
   
   .close3:hover,
   .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close4:hover,
+  .close4:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
