@@ -76,6 +76,15 @@
     z-index: 1;
 }
 
+.spinTri {
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+}
+
 .headerBox::before {
     content: "";
     position: absolute;
@@ -166,4 +175,38 @@
     visibility: visible;
     transform: scale(1);
     transform-origin: bottom;
+}
+
+.tri1 {
+    animation: triRot 5s linear infinite;
+    transform-origin: center;
+}
+
+.tri2 {
+    animation: triRot 4s linear infinite;
+    animation-delay: 1s;
+    transform-origin: center;
+}
+
+.tri3 {
+    animation: triRot 3s linear infinite;
+    animation-delay: 2s;
+    transform-origin: center;
+}
+
+.tri4 {
+    animation: triRot 2s linear infinite;
+    animation-delay: 3s;
+    transform-origin: center;
+}
+
+.tri5 {
+    animation: triRot 1s linear infinite;
+    animation-delay: 4s;
+    transform-origin: 134px 115px;
+}
+
+@keyframes triRot{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
