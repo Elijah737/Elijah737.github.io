@@ -1,9 +1,12 @@
 console.log("YOLO");
 
 var navCont = document.getElementById("navCont");
+var navContainer = document.getElementById("navContainer");
 // var itemBody = document.getElementById("itemBody");
 
 navCont.addEventListener("click", myFunc)
+navContainer.addEventListener("mouseover", navGrow)
+navContainer.addEventListener("mouseout", navShrink)
 
 function myFunc(){
     // element.style.backgroundColor = "blue"
@@ -21,6 +24,16 @@ function goToPortfolio(){
 
 function goToSpaceTree(){
     window.location = './4-23_tree_website_edit/index.html'
+};
+
+function navGrow(){
+    navContainer.style.height = "40px";
+    navCont.style.display = "flex"
+};
+
+function navShrink(){
+    navContainer.style.height = "10px";
+    navCont.style.display = "none"
 };
 
 // var element = document.getElementById("navCont");

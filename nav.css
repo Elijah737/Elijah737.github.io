@@ -57,19 +57,21 @@
     justify-content: center;
     /* background-color: rgb(34, 34, 34); */
     background-color: rgb(26, 26, 26);
-    height: 40px;
+    height: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(148, 148, 148);
+    transition: 0.3s;
 }
 
 .green {
     background-color: green;
 }
 
-.navBox {
+#navCont {
     width: 50%;
-    display: flex;
+    display: none;
     justify-content: space-around;
+    transition: 0.5s;
 }
 
 .navLink {
