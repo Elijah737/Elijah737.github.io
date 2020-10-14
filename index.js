@@ -2,6 +2,7 @@ console.log("YOLO");
 
 var navCont = document.getElementById("navCont");
 var navContainer = document.getElementById("navContainer");
+var navLink = document.getElementsByClassName("navLink");
 // var itemBody = document.getElementById("itemBody");
 
 navCont.addEventListener("click", myFunc)
@@ -28,7 +29,7 @@ function goToSpaceTree(){
 
 function navGrow(){
     navContainer.style.height = "40px";
-    navCont.style.display = "flex"
+    navCont.style.display = "flex";
 };
 
 function navShrink(){
