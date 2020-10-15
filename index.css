@@ -13,7 +13,8 @@
 
 .thing1 {
     /* background-color: tomato; */
-    background-image: url(https://www.msta.org/wp-content/uploads/2017/10/watercolor-background-1.jpg);
+    background-image: url(./fooddood.png);
+    background-position: center;
     background-size: cover;
 }
 

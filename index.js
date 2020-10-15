@@ -1,5 +1,6 @@
 console.log("YOLO");
 
+// document.querySelectorAll(".navLink").forEach(el => el.style.height = "0px");
 var navCont = document.getElementById("navCont");
 var navContainer = document.getElementById("navContainer");
 // var itemBody = document.getElementById("itemBody");
@@ -12,6 +13,10 @@ function myFunc(){
     // element.style.backgroundColor = "blue"
     navCont.classList.toggle("green");
     navCont.style.width = "100%"
+};
+
+function goToFoodDood(){
+    window.location = 'https://github.com/Elijah737/FoodDood'
 };
 
 function goToQuizzApp(){
@@ -33,7 +38,7 @@ function navGrow(){
 
 function navShrink(){
     navContainer.style.height = "10px";
-    navCont.style.display = "none"
+    navCont.style.display = "none";
 };
 
 // var element = document.getElementById("navCont");
