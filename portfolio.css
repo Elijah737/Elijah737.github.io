@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: rgb(32, 32, 32);
 }
 
 .portfolioContent {
@@ -9,6 +9,7 @@ body {
 }
 
 .portfolioModals {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -19,6 +20,11 @@ body {
     height: 350px;
     background-color: turquoise;
     margin: 10px;
+    transition: 0.15s;
+}
+
+.portPic:hover {
+  border: 2px solid grey;
 }
 
 #port1 {

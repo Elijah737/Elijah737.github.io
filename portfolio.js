@@ -1,5 +1,3 @@
-console.log("is this fucking thing working or what?")
-
 var navCont = document.getElementById("navCont");
 var navContainer = document.getElementById("navContainer");
 
